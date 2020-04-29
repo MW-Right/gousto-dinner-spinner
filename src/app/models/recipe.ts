@@ -11,7 +11,7 @@ export class Ingredient {
     typeId: number;
 }
 
-export class Quantities {
+export class Quantity {
     id: number;
     amount: number;
 }
