@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>List of Recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/recipe">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item button [routerLink]="['/recipe', recipe.id]" *ngFor="let recipe of (recipes | async)">
+      {{ recipe.name }}
+    </ion-item>
+  </ion-list>
+</ion-content>

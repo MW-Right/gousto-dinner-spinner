@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyCu-7wTVEoGB_Olmos972-SQP20kZjD-fE",
+    authDomain: "gousto-dinner-spinner.firebaseapp.com",
+    databaseURL: "https://gousto-dinner-spinner.firebaseio.com",
+    projectId: "gousto-dinner-spinner",
+    storageBucket: "gousto-dinner-spinner.appspot.com",
+    messagingSenderId: "614895598348"
+  }
 };
 
 /*
